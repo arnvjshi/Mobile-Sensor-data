@@ -1,16 +1,29 @@
-# sensord_trial
+Sensor Monitoring Dashboard
+A Flutter application for real-time visualization of sensor data.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Key Features
+Sensor Data Acquisition:
+#Accelerometer
+#Gyroscope
+#Magnetometer
+#UserAccelerometer
+#LinearAccelerometer
+#Gravity
+Real-time Visualization:
+#fl_chart for interactive charts
+Scrollable dashboard with individual sensor charts
+Configurable chart data points (currently 50)
+Dynamic Updates:
+Real-time chart updates
+Dependencies
+sensors_plus: For accessing device sensors
+fl_chart: For creating interactive charts
+Implementation Notes
+Sensor Data Collection:
+Stream listeners for continuous data collection
+Rolling buffer for efficient data handling
+Visualization:
+Dedicated chart for each sensor
+X-axis values by default (configurable for Y or Z)
+Color-coded charts for clarity
+Dynamic updates for real-time visualization
